@@ -30,6 +30,10 @@ public class LinkedListMain {
 			break;
 		case 6:
 			Operations.findNodeBasedOnValue();
+			break;
+		case 7:
+			Operations.insertAfterSearchNode();
+			break;
 
 		}
 		scanner.close();

@@ -38,6 +38,9 @@ public class LinkedListMain {
 			break;
 		case 8:
 			Operations.deleteAfterNodeAfterSearchNode();
+		case 9:
+			Operations.sortList();
+			break;
 
 		}
 		scanner.close();

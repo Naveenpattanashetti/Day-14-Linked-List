@@ -8,9 +8,13 @@ public class LinkedListMain {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Press '1' to add the data at the start");
 		switch (scanner.nextInt()) {
-		case 1: {
+		case 1: 
 			Operations.addDataAtStart();
-		}
+			break;
+		 case 2:
+             Operations.addDataAtEnd();
+             break;			
+		
 		}
 		scanner.close();
 	}

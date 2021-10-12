@@ -4,18 +4,18 @@ public class LinkedList {
 	Node head;
 	Node tail;
 
-
-    public Node push(int data) {
-        Node newNode = new Node(data);
-        if (head == null) {
-            head = newNode;
-            tail = newNode;
-        } else {
-            Node temp = head;
-            this.head = newNode;
-            newNode.next = temp;
-        }return newNode;
-    }
+	public Node push(int data) {
+		Node newNode = new Node(data);
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			Node temp = head;
+			this.head = newNode;
+			newNode.next = temp;
+		}
+		return newNode;
+	}
 
 	public void print() {
 		if (head == null) {
@@ -45,5 +45,9 @@ public class LinkedList {
 		Node tempNode = previousNode.next;
 		previousNode.next = newNode;
 		newNode.next = tempNode;
+	}
+
+	public void pop() {
+		this.head = this.head.next;
 	}
 }
